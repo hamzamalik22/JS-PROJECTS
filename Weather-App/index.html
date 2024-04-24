@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="search">
+                <input id="input" type="text" placeholder="Search...">
+                <button id="search" class="search-icon"><i class="ri-search-2-line"></i></button>
+            </div>
+            <div class="img">
+                <img id="img" src="./images/clear.png" alt="">
+            </div>
+            <div class="temperature">
+                <h2><span id="temperature">22</span> °C</h2>
+            </div>
+            <div class="city">
+                <h3 id="city">Jhelum</h3>
+            </div>
+            <div class="footer">
+                <div class="humidity">
+                    <img src="./images/humidity.png" alt="">
+                    <div class="humidity_info">
+                        <h4>
+                            <span id="humidity">53</span>%
+                        </h4>
+                        <h6>
+                            Humidity
+                        </h6>
+                    </div>
+                </div>
+                <div class="wind_speed">
+                    <img src="./images/wind.png" alt="">
+                    <div class="wind_info">
+                        <h4>
+                            <span id="wind_speed">5.66</span> km/h
+                        </h4>
+                        <h6>
+                            Wind Speed
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
