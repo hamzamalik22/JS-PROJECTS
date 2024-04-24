@@ -115,6 +115,83 @@ body{
     height: 30px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 440px) {
+    .container{
+        border-radius: 0px;
+        gap: 15px;
+    }
     
+    .search{
+        gap: 5.5vw;
+    }
+    
+    .search input[type = text]{
+        padding: 0.8em 4em;
+        border: none;
+        border-radius: 50px;
+        color: #2b2828;
+        outline-color: rgb(132, 145, 184);
+        font-size: 0.8rem;
+    }
+    
+    .search .search-icon{
+        padding: 0.6em 0.8em;
+        background-color: #f9f9f9;
+        border-radius: 50%;
+        border: none;
+    
+    }
+    
+    .search .search-icon i{
+        color: black;
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+    
+    .img{
+        width: 150px;
+        height: 150px;
+    }
+        
+    .temperature h2{
+        font-size: 3rem;
+        font-weight: 500;
+    }
+    
+    .city h3{
+        font-size: 2rem;
+        font-weight: 400;
+        padding-bottom: 20px;
+    }
+    
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20vw;
+    }
+    
+    .humidity{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .humidity img{
+        height: 30px;
+    }
+    
+    .wind_speed{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .wind_speed h4,h6{
+        font-weight: 500;
+    }
+    
+    .wind_speed img{
+        height: 30px;
+    }
 }
