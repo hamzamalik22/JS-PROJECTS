@@ -121,3 +121,111 @@ body{
     background: #ebebeb;
     cursor: pointer;
 }
+
+@media (max-width :524px){
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em 1em;
+}
+
+.card{
+    background: #ffffff;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2em 1.5em;
+    gap: 20px;
+    border-radius: 6px;
+}
+
+.input input[type = text]{
+    padding: 0.4em 1.8em;
+    border: none;
+    border-radius: 50px;
+    color: #2b2828;
+    outline:none;
+    font-size: 0.8rem;
+    background: #dadada;
+}
+
+.input input[type = submit]{
+    background: rgb(255, 131, 86);
+    padding: 0.4em 1em;
+    border: none;
+    border-radius: 50px;
+    color: #2b2828;
+    outline-color: royalblue;
+    font-size: 0.8rem;
+    margin-left: -35px;
+    cursor: pointer;
+}
+
+
+.task{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.unchecked{
+    font-size: 0.7rem;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.unchecked::before{
+    content: '';
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background-image: url(./images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    left: 5px;
+}
+
+.checked{
+    font-size: 0.7rem;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: line-through;
+    color: #555;
+}
+
+.checked::before{
+    content: '';
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background-image: url(./images/checked.png);
+    background-size: cover;
+    background-position: center;
+    left: 5px;
+}
+
+#btn_close{
+    cursor: pointer;
+}
+
+#btn_close:hover{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    background: #ebebeb;
+    cursor: pointer;
+}
+}
