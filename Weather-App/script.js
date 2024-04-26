@@ -20,6 +20,8 @@ async function getWeather(city){
     
     let data = await fetched.json();
 
+    console.log(data);
+
     if(city.toLowerCase() === data.name.toLowerCase()){
         if (data.weather[0].main == 'Clear'){
             img.src = './images/clear.png';
