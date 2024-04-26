@@ -35,10 +35,6 @@ body{
     border-radius: 6px;
 }
 
-.input{
-    /* background: rgb(180, 255, 6); */
-}
-
 .input input[type = text]{
     padding: 0.6em 3.2em;
     border: none;
